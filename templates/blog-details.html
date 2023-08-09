@@ -65,18 +65,18 @@
             <h4>{{post.comments | length}} Comments</h4>
             {% for comment in post.comments %}
               <div class="comment-list">
-                  <div class="single-comment justify-content-between d-flex">
-                      <div class="user justify-content-between d-flex">
-                          <div class="desc">
-                              <h5><a href="#">{{comment.author}}</a></h5>
-                              <p class="date">{{comment.published_at}}</p>
-                              <p class="comment">{{comment.text}}</p>
-                          </div>
-                      </div>
-                      <div class="reply-btn">
-                          <a href="" class="btn-reply text-uppercase">reply</a>
-                      </div>
+                <div class="single-comment justify-content-between d-flex">
+                  <div class="user justify-content-between d-flex">
+                    <div class="desc">
+                      <h5><a href="#">{{comment.author}}</a></h5>
+                      <p class="date">{{comment.published_at}}</p>
+                      <p class="comment">{{comment.text}}</p>
+                    </div>
                   </div>
+                  <div class="reply-btn">
+                    <a href="" class="btn-reply text-uppercase">reply</a>
+                  </div>
+                </div>
               </div>
             {% endfor %}
           </div>
@@ -90,8 +90,7 @@
               <h4 class="single-sidebar-widget__title">Newsletter</h4>
               <div class="form-group mt-30">
                 <div class="col-autos">
-                  <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Enter email" onfocus="this.placeholder = ''"
-                    onblur="this.placeholder = 'Enter email'">
+                  <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Enter email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter email'">
                 </div>
               </div>
               <button class="bbtns d-block mt-20 w-100">Subcribe</button>
